@@ -5,3 +5,102 @@
   font-weight: 400px;
   font-style: normal;
 }
+/* Shared Styles! Same Style bar, bar na likhe ekjaigai likha */
+.disply-flex{
+  display: flex;
+}
+.brand-name{
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 3rem;
+}
+/* dark 01 */
+.text-main-color{
+  color: #131313;
+}
+/* dark 02 */
+.text-gray{
+  color: #424242;
+}
+/* dark 03 */
+.text-light-gray{
+  color: #727272;
+}
+/* header color */
+.primary-color{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+  font-size: 1.5rem;
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 25px;
+  font-weight: 600px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border: none;
+}
+/* Header Styles */
+
+/* Navbar Relative Styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-menu-link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Banner relative styles */
+.banner-content{
+ max-width: 850px;
+ margin: 0 auto;
+ text-align: center;
+ margin-bottom: 50px;
+}
+.image-conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+ 
+}
+.banner-image{
+    display: block;
+    width: 80%;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-description{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px) {
+  .navbar, .nav-menu{
+    flex-direction: column;
+    
+  }
+
+  .nav-menu-item{
+    margin-bottom: 30px;
+  
+  }
+  .banner-image{
+    width: 100%;
+  }
+}
